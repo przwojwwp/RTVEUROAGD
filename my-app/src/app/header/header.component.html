@@ -1,5 +1,7 @@
 <header>
   <div class="logo">MojeLogo</div>
+  <button class="hamburger" (click)="toggleMenu()">☰</button>
+  <app-mobile-menu *ngIf="menuOpen" (close)="(!menuOpen)"></app-mobile-menu>
   <nav>
     <ul>
       <li><a href="#">Strona główna</a></li>
